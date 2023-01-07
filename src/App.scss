@@ -1,0 +1,146 @@
+@import "style/detail";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.container{
+  width: 1270px;
+  margin: 0 auto;
+}
+#header{
+  box-shadow: 0 4px 8px 0 rgb(35 10 10 / 20%), 0 6px 20px 0 rgb(243 204 34);
+  position: relative;
+  transition: 0.2s;
+  background: #060f3f;
+  padding: 30px 0 ;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo{
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: white;
+}
+.right-side{
+  display: flex;
+  align-items: center;
+}
+
+a{
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+.header-buttons{
+  display: flex;
+  align-items: center;
+}
+.btn{
+  color: #f3cc22;
+  border: 2px solid #40AB7E;
+  background: transparent;
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin: 0 10px;
+}
+
+.btn:hover{
+  background: #7CBA72;
+  color: black;
+}
+.active{
+  color: #40AB7E;
+
+}
+
+#movies{
+  padding: 40px 0;
+  .movies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .card{
+      margin: 20px;
+      box-shadow: 0 4px 8px 0 rgb(35 10 10 / 20%), 0 6px 20px 0 rgb(243 204 34);
+      position: relative;
+      transition: 0.2s;
+    }
+  }
+}
+
+.dark-mode{
+  padding: 5px 10px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid white;
+  background: black;
+  color: white;
+}
+
+.search-movie{
+  input{
+      padding:10px;
+      border-radius:10px;
+      background: #fdfdfd;
+      border: none;
+      outline: none;
+      width: 280px;
+
+    }
+  button{
+    appearance: none;
+    border: 0;
+    border-radius: 10px;
+    background: #4676D7;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  button:active{
+    background: white;
+    color: black;
+  }
+}
+.page-btn{
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: #271533;
+  color: white;
+  font-size: 18px;
+  cursor:grab;
+  transition: .2s;
+}
+
+.page-btn:hover{
+  background: white;
+  color: #060f3f;
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 7%;
+  button{
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #271533;
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  .active{
+    background: yellowgreen;
+  }
+}

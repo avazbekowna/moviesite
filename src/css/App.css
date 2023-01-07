@@ -1,0 +1,267 @@
+@charset "UTF-8";
+#detail-page {
+  color: white;
+  padding: 50px 0;
+  min-height: 100vh;
+  position: relative;
+}
+#detail-page:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+#detail-page .detail-page {
+  position: relative;
+  z-index: 3;
+  display: flex;
+}
+#detail-page .detail-page--img {
+  box-shadow: 0 4px 8px 0 rgba(35, 10, 10, 0.2), 0 6px 20px 0 rgb(243, 204, 34);
+  position: relative;
+  transition: 0.2s;
+}
+#detail-page .detail-page--img:hover:before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  content: "Расширать";
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
+}
+#detail-page .detail-page--description {
+  margin: 0 5%;
+}
+#detail-page .detail-page--description .rating {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #26266e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #d2b536;
+  margin: 10px 0;
+}
+
+.cast {
+  padding: 6% 0;
+}
+
+.videos {
+  padding: 5% 0;
+}
+
+.modal {
+  position: fixed;
+  display: flex;
+  width: 50vw;
+  height: 80%;
+  top: 10%;
+  left: 24%;
+  background: white;
+  text-align: end;
+  transition: 0.3s;
+}
+.modal-description {
+  width: 100%;
+  padding: 0 20px;
+  color: black;
+}
+.modal-description-close-btn {
+  font-size: 3rem;
+  text-align: end;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.modal-description h3 {
+  text-align: start;
+}
+
+#blur-window {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.63);
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(5px);
+}
+
+#detail-cast {
+  padding: 5% 0;
+}
+#detail-cast .detail-cast {
+  display: flex;
+}
+#detail-cast .detail-cast--desc {
+  margin: 0 5%;
+}
+#detail-cast .detail-cast--desc--movies {
+  margin: 30px 0;
+}
+
+.slick-slide img {
+  box-shadow: 0 4px 8px 0 rgba(35, 10, 10, 0.2), 0 6px 20px 0 rgb(6, 15, 63);
+  position: relative;
+  transition: 0.2s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 1270px;
+  margin: 0 auto;
+}
+
+#header {
+  box-shadow: 0 4px 8px 0 rgba(35, 10, 10, 0.2), 0 6px 20px 0 rgb(243, 204, 34);
+  position: relative;
+  transition: 0.2s;
+  background: #060f3f;
+  padding: 30px 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: white;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  color: #f3cc22;
+  border: 2px solid #40AB7E;
+  background: transparent;
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin: 0 10px;
+}
+
+.btn:hover {
+  background: #7CBA72;
+  color: black;
+}
+
+.active {
+  color: #40AB7E;
+}
+
+#movies {
+  padding: 40px 0;
+}
+#movies .movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#movies .movies .card {
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(35, 10, 10, 0.2), 0 6px 20px 0 rgb(243, 204, 34);
+  position: relative;
+  transition: 0.2s;
+}
+
+.dark-mode {
+  padding: 5px 10px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid white;
+  background: black;
+  color: white;
+}
+
+.search-movie input {
+  padding: 10px;
+  border-radius: 10px;
+  background: #fdfdfd;
+  border: none;
+  outline: none;
+  width: 280px;
+}
+.search-movie button {
+  appearance: none;
+  border: 0;
+  border-radius: 10px;
+  background: #4676D7;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.search-movie button:active {
+  background: white;
+  color: black;
+}
+
+.page-btn {
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: #271533;
+  color: white;
+  font-size: 18px;
+  cursor: grab;
+  transition: 0.2s;
+}
+
+.page-btn:hover {
+  background: white;
+  color: #060f3f;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 7%;
+}
+.pagination button {
+  padding: 7px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #271533;
+  color: white;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.pagination .active {
+  background: yellowgreen;
+}
+
+/*# sourceMappingURL=App.css.map */
